@@ -7,9 +7,7 @@
  *  Modified 2014, 2015, 2016, 2017 by Rob Patro.
  */
 
-#if defined(__aarch64__) or defined(__arm64__)
 #define BOOST_MATH_NO_LONG_DOUBLE_MATH_FUNCTIONS
-#endif
 
 #include "FragmentLengthDistribution.hpp"
 #include "SalmonMath.hpp"
