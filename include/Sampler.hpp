@@ -8,6 +8,10 @@ extern "C" {
 #undef min
 }
 
+#if defined(__aarch64__) or defined(__arm64__)
+#define BOOST_MATH_NO_LONG_DOUBLE_MATH_FUNCTIONS
+#endif
+
 // for cpp-format
 #include "spdlog/fmt/fmt.h"
 #include "spdlog/spdlog.h"

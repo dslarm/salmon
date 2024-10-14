@@ -15,6 +15,10 @@
 #include "oneapi/tbb/partitioner.h"
 
 //#include "fastapprox.h"
+#if defined(__aarch64__) or defined(__arm64__)
+#define BOOST_MATH_NO_LONG_DOUBLE_MATH_FUNCTIONS
+#endif
+
 #include <boost/filesystem.hpp>
 #include <boost/math/distributions/gamma.hpp>
 #include <boost/math/special_functions/digamma.hpp>

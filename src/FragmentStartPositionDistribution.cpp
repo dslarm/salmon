@@ -6,6 +6,11 @@
  * Rob Patro; 2014, 2015
  */
 
+#if defined(__aarch64__) or defined(__arm64__)
+#define BOOST_MATH_NO_LONG_DOUBLE_MATH_FUNCTIONS
+#endif
+
+
 #include "FragmentStartPositionDistribution.hpp"
 #include "SalmonMath.hpp"
 #include <boost/assign.hpp>

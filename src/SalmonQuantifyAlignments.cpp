@@ -1,4 +1,8 @@
 
+#if defined(__aarch64__) or defined(__arm64__)
+#define BOOST_MATH_NO_LONG_DOUBLE_MATH_FUNCTIONS
+#endif
+
 extern "C" {
 #include "io_lib/os.h"
 #include "io_lib/scram.h"

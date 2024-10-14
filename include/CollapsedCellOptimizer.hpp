@@ -1,6 +1,10 @@
 #ifndef COLLAPSED_CELL_OPTIMIZER_HPP
 #define COLLAPSED_CELL_OPTIMIZER_HPP
 
+#if defined(__aarch64__) or defined(__arm64__)
+#define BOOST_MATH_NO_LONG_DOUBLE_MATH_FUNCTIONS
+#endif
+
 #include <unordered_map>
 #include <unordered_set>
 #include <functional>
